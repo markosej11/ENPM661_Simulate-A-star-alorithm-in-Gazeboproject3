@@ -329,7 +329,7 @@ class Astar(object):
         while(path[node[0]][node[1]][node[2]] != -1):
             backtrack_states.append(node)
             node = path[node[0]][node[1]][node[2]]
-        backtrack_states.append(self.start)
+        backtrack_states.append(start)
         backtrack_states = list(reversed(backtrack_states))
         print("Back tracking done") 
         return (explored_states, backtrack_states, distMap[cat][dog])
